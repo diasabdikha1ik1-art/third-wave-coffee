@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1c0f08"/>
+      <stop offset="0.5" stop-color="#3b2214"/>
+      <stop offset="1" stop-color="#6a3f22"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.78" cy="0.5" r="0.45">
+      <stop offset="0" stop-color="#e0b27a" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#e0b27a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cup" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f4e9db"/>
+      <stop offset="0.6" stop-color="#e3d0b8"/>
+      <stop offset="1" stop-color="#c9b093"/>
+    </linearGradient>
+    <g id="bean">
+      <ellipse cx="0" cy="0" rx="46" ry="30" fill="#2e1a0f"/>
+      <ellipse cx="-8" cy="-9" rx="26" ry="9" fill="#4a2c1a" opacity="0.7"/>
+      <path d="M-40 -3 C-15 -22 15 18 40 3" fill="none" stroke="#0f0703" stroke-width="5" stroke-linecap="round"/>
+    </g>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+
+  <g opacity="0.5">
+    <use href="#bean" transform="translate(170 150) rotate(-25)"/>
+    <use href="#bean" transform="translate(430 720) rotate(35) scale(1.2)"/>
+    <use href="#bean" transform="translate(720 110) rotate(10) scale(0.8)"/>
+    <use href="#bean" transform="translate(1080 790) rotate(-40)"/>
+    <use href="#bean" transform="translate(1420 160) rotate(50) scale(0.9)"/>
+    <use href="#bean" transform="translate(80 520) rotate(60) scale(1.1)"/>
+    <use href="#bean" transform="translate(620 480) rotate(-55) scale(0.7)"/>
+    <use href="#bean" transform="translate(1520 760) rotate(-10) scale(1.3)"/>
+  </g>
+
+  <!-- saucer -->
+  <ellipse cx="1180" cy="700" rx="260" ry="48" fill="#120a05" opacity="0.5"/>
+  <ellipse cx="1180" cy="680" rx="250" ry="42" fill="#d8c3a5"/>
+  <ellipse cx="1180" cy="672" rx="205" ry="30" fill="#efe2cf"/>
+
+  <!-- cup -->
+  <path d="M1030 470 H1330 C1330 600 1290 668 1180 668 C1070 668 1030 600 1030 470 Z" fill="url(#cup)"/>
+  <path d="M1328 500 C1420 490 1420 590 1318 596" fill="none" stroke="#e3d0b8" stroke-width="22" stroke-linecap="round"/>
+  <ellipse cx="1180" cy="470" rx="150" ry="30" fill="#e8d6bd"/>
+  <ellipse cx="1180" cy="474" rx="132" ry="23" fill="#4b2a16"/>
+  <ellipse cx="1180" cy="474" rx="100" ry="15" fill="#6d4023"/>
+  <path d="M1140 470 C1160 462 1170 484 1190 474 C1204 467 1214 476 1226 470" fill="none" stroke="#e8c9a0" stroke-width="5" stroke-linecap="round"/>
+
+  <!-- steam -->
+  <g fill="none" stroke="#f1dfc6" stroke-linecap="round" stroke-width="10" opacity="0.28">
+    <path d="M1120 410 C1090 370 1150 340 1120 300 C1095 265 1135 240 1120 210"/>
+    <path d="M1185 400 C1155 355 1215 325 1185 280 C1160 245 1200 215 1185 180"/>
+    <path d="M1250 410 C1222 372 1278 345 1250 305 C1228 272 1262 248 1250 222"/>
+  </g>
+</svg>
