@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Local third wave coffee shop: single-origin beans, fresh roast, express pre-order for pickup.">
+  <title>Third Wave Coffee — Fresh Roast. Honest Taste</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <input type="checkbox" id="theme-toggle" class="visually-hidden" aria-label="Dark theme">
+
+  <header class="site-header">
+    <a class="logo" href="#top"><span class="logo-mark">&#9749;</span> Third Wave</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <input type="checkbox" id="burger" class="visually-hidden" aria-label="Toggle menu">
+      <label for="burger" class="burger" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+      <ul class="nav-list">
+        <li><a href="#beans">Beans</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#addresses">Addresses</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="eyebrow">Small-batch roastery</p>
+      <h1>Fresh Roast. Honest Taste</h1>
+      <p class="lead">Single-origin coffee, roasted in small batches in our own city and ready for pickup.</p>
+      <a class="cta" href="#menu">View Menu &rarr;</a>
+      <ul class="hero-stats">
+        <li><strong>6</strong> origins</li>
+        <li><strong>48h</strong> roast to cup</li>
+        <li><strong>100%</strong> traceable</li>
+      </ul>
+    </section>
+
+    <section class="beans" id="beans">
+      <header class="section-head">
+        <p class="eyebrow">Where it grows</p>
+        <h2>Single-Origin Beans</h2>
+        <p>Every lot comes from one farm region. Altitude and terroir shape the flavor in your cup.</p>
+      </header>
+      <ul class="cards">
+        <li>
+          <article class="card">
+            <p class="origin"><span class="flag">&#127466;&#127481;</span> Ethiopia</p>
+            <h3>Yirgacheffe</h3>
+            <p class="altitude"><span>Altitude</span> 1900 m</p>
+            <ul class="notes">
+              <li>jasmine</li><li>bergamot</li><li>lemon</li>
+            </ul>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <p class="origin"><span class="flag">&#127464;&#127476;</span> Colombia</p>
+            <h3>Huila</h3>
+            <p class="altitude"><span>Altitude</span> 1750 m</p>
+            <ul class="notes">
+              <li>caramel</li><li>red apple</li><li>cocoa</li>
+            </ul>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <p class="origin"><span class="flag">&#127472;&#127466;</span> Kenya</p>
+            <h3>Nyeri AA</h3>
+            <p class="altitude"><span>Altitude</span> 1800 m</p>
+            <ul class="notes">
+              <li>blackcurrant</li><li>tomato</li><li>brown sugar</li>
+            </ul>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <p class="origin"><span class="flag">&#127468;&#127481;</span> Guatemala</p>
+            <h3>Antigua</h3>
+            <p class="altitude"><span>Altitude</span> 1600 m</p>
+            <ul class="notes">
+              <li>milk chocolate</li><li>orange</li><li>nuts</li>
+            </ul>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <p class="origin"><span class="flag">&#127463;&#127479;</span> Brazil</p>
+            <h3>Cerrado</h3>
+            <p class="altitude"><span>Altitude</span> 1100 m</p>
+            <ul class="notes">
+              <li>hazelnut</li><li>toffee</li><li>low acidity</li>
+            </ul>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <p class="origin"><span class="flag">&#127464;&#127479;</span> Costa Rica</p>
+            <h3>Tarrazú</h3>
+            <p class="altitude"><span>Altitude</span> 1700 m</p>
+            <ul class="notes">
+              <li>honey</li><li>peach</li><li>vanilla</li>
+            </ul>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section class="order" id="menu">
+      <header class="section-head">
+        <p class="eyebrow">Skip the line</p>
+        <h2>Express Pre-Order</h2>
+        <p>Choose your drink, set a pickup time and we will have it ready at the counter.</p>
+      </header>
+      <form action="#" method="post" class="order-form">
+        <label for="item">Item</label>
+        <select id="item" name="item" required>
+          <option value="">Choose a drink</option>
+          <option>Espresso</option>
+          <option>Flat White</option>
+          <option>V60 Pour Over</option>
+          <option>Cold Brew</option>
+          <option>Whole Beans 250 g</option>
+        </select>
+
+        <label for="pickup">Pickup Time</label>
+        <input type="time" id="pickup" name="pickup" required>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required minlength="2">
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="+7 700 000 0000" pattern="[+0-9 ()\-]{10,}" required>
+
+        <button type="submit">Place Order</button>
+      </form>
+    </section>
+
+    <section class="addresses" id="addresses">
+      <header class="section-head">
+        <p class="eyebrow">Find us</p>
+        <h2>Addresses</h2>
+      </header>
+      <ul class="address-list">
+        <li>
+          <h3>Flagship roastery</h3>
+          <p>Almaty, Manas St 34/1</p>
+        </li>
+        <li>
+          <h3>Coffee bar</h3>
+          <p>Almaty, Dostyk Ave 45</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <section class="footer-block footer-brand">
+      <h2>&#9749; Third Wave</h2>
+      <p>Fresh roast. Honest taste.</p>
+    </section>
+
+    <section class="footer-block">
+      <h2>Opening Hours</h2>
+      <p>Mon–Fri: 08:00–21:00</p>
+      <p>Sat–Sun: 09:00–22:00</p>
+    </section>
+
+    <nav class="footer-block" aria-label="Footer navigation">
+      <h2>Links</h2>
+      <ul>
+        <li><a href="#beans">Beans</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#addresses">Addresses</a></li>
+      </ul>
+    </nav>
+
+    <section class="footer-block">
+      <h2>Follow Us</h2>
+      <ul>
+        <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a href="https://t.me" target="_blank" rel="noopener">Telegram</a></li>
+        <li><a href="https://tiktok.com" target="_blank" rel="noopener">TikTok</a></li>
+      </ul>
+    </section>
+
+    <section class="footer-block">
+      <h2>Theme</h2>
+      <label for="theme-toggle" class="theme-btn">&#9790; Light / Dark</label>
+    </section>
+
+    <p class="legal">&copy; 2026 Third Wave Coffee. All rights reserved. Educational project, ICT6001.</p>
+  </footer>
+</body>
+</html>
