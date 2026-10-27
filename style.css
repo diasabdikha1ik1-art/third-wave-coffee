@@ -75,8 +75,7 @@ h2 { font-size: 2rem; }
   align-items: center;
   justify-content: space-between;
   padding: 0.9rem 1.25rem;
-  background: color-mix(in srgb, var(--bg) 88%, transparent);
-  backdrop-filter: blur(0.75rem);
+  background: var(--bg);
   border-bottom: 0.0625rem solid var(--border);
 }
 
